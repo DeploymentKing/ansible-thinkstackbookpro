@@ -9,6 +9,17 @@
   with_fileglob:
     - files/.aws/*
 
+- name: Copy bash and git files
+  copy:
+    src: "{{ item }}"
+    dest: ~/
+    owner: "{{ ansible_user_id }}"
+    group: admin
+    mode: 0644
+  with_fileglob:
+    - files/.git*
+    - files/.bash*
+
 - name: Copy the private .ssh key files
   copy:
     src: "{{ item }}"
@@ -19,7 +30,7 @@
   with_fileglob:
     - files/.ssh/*_rsa
 
-- name: Copy files with mode 0644
+- name: Copy the public .ssh files with mode 0644
   copy:
     src: "{{ item }}"
     dest: ~/.ssh/
@@ -30,5 +41,3 @@
     - files/.ssh/*_rsa.pub
     - files/.ssh/config
     - files/.ssh/known_hosts
-    - files/.git*
-    - files/.bash*
