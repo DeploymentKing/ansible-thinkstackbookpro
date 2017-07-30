@@ -1,16 +1,16 @@
 ---
 - name: "{{ item }} : Check if the app is in the dock."
-  command: "dockutil --find '{{ item }}'"
-  register: command_output
+  shell: "dockutil --find '{{ item }}'"
+  register: app_removal_command_output
 
 - name: Debug stdout
   debug:
-    msg: "{{ command_output.stdout }}"
+    msg: "{{ app_removal_command_output.stdout }}"
 
 - name: Debug stderr
   debug:
-    msg: "{{ command_output.stderr }}"
+    msg: "{{ app_removal_command_output.stderr }}"
 
 - name: "{{ item }} : Add the app to the dock if not found."
-  command: "dockutil --remove '{{ item }}'"
-  when: command_output.stdout | search('was found')
+  shell: "dockutil --remove '{{ item }}'"
+  when: app_removal_command_output.stdout | search('was found')
