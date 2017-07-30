@@ -51,8 +51,12 @@ homebrew_uninstalled_packages: []
 homebrew_upgrade_all_packages: no
 
 homebrew_taps:
-  - homebrew/core
-  - caskroom/cask
+  homebrew:
+    tap: homebrew/core
+    path: homebrew/homebrew-core
+  caskroom:
+    tap: caskroom/cask
+    path: caskroom/homebrew-cask
 
 homebrew_cask_apps:
   - 1password
