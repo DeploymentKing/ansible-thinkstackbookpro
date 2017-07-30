@@ -11,6 +11,15 @@ dockutil_items_to_add:
   skype:
     app: 'Skype'
     position: '--after Slack'
+  1password:
+    app: '1Password 6'
+    position: '--after Calendar'
+  sublime_text:
+    app: 'Sublime Text'
+    position: '--after 1Password 6'
+  iterm:
+    app: 'iTerm'
+    position: '--after Sublime Text'
 
 dockutil_items_to_remove:
   - Contacts
