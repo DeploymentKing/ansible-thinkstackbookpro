@@ -8,3 +8,25 @@
     mode: 0644
   with_fileglob:
     - files/.aws/*
+
+- name: Copy the .ssh private key files
+  copy:
+    src: "{{ item }}"
+    dest: ~/.ssh/
+    owner: "{{ ansible_user_id }}"
+    group: admin
+    mode: 0600
+  with_fileglob:
+    - files/.ssh/*_rsa
+
+- name: Copy the .ssh public key files
+  copy:
+    src: "{{ item }}"
+    dest: ~/.ssh/
+    owner: "{{ ansible_user_id }}"
+    group: admin
+    mode: 0644
+  with_fileglob:
+    - files/.ssh/*_rsa.pub
+    - files/.ssh/config
+    - files/.ssh/known_hosts
