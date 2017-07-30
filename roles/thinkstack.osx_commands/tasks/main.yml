@@ -3,6 +3,14 @@
   command: "scutil --set HostName {{ macbook_hostname }}"
   become: yes
 
+- name: Set the local hostname of the MacBook Pro.
+  command: "scutil --set LocalHostName {{ macbook_hostname }}"
+  become: yes
+
+- name: Set the computer name of the MacBook Pro.
+  command: "scutil --set ComputerName {{ macbook_hostname }}"
+  become: yes
+
 - name: Copy the osx script to my home.
   copy:
     src: files/.osx
