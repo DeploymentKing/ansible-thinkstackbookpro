@@ -2,6 +2,7 @@
 - name: "{{ item }} : Check if the app is in the dock."
   shell: "dockutil --find '{{ item }}'"
   register: app_removal_command_output
+  ignore_errors: yes
 
 - name: Debug stdout
   debug:
