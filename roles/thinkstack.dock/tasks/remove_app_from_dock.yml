@@ -3,6 +3,14 @@
   command: "dockutil --find '{{ item }}'"
   register: command_output
 
+- name: Debug stdout
+  debug:
+    msg: "{{ command_output.stdout }}"
+
+- name: Debug stderr
+  debug:
+    msg: "{{ command_output.stderr }}"
+
 - name: "{{ item }} : Add the app to the dock if not found."
   command: "dockutil --remove '{{ item }}'"
   when: command_output.stdout | search('was found')
