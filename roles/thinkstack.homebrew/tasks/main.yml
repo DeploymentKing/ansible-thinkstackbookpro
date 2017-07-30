@@ -64,7 +64,7 @@
 - name: Ensure configured taps are tapped.
   homebrew_tap:
     tap: "{{ item }}"
-    state: absent
+    state: present
   with_items: "{{ homebrew_taps }}"
 
 #- name: Ensure configured homebrew packages are installed.
