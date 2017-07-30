@@ -17,6 +17,8 @@ homebrew_installed_packages:
   - git
   - git-secrets
   - go
+  - gradle
+  - groovy
   - htop-osx
   - icu4c
   - jq
@@ -72,15 +74,12 @@ homebrew_cask_apps:
   - gitkraken
   - google-chrome
   - gpgtools
-  - gradle
-  - groovy
   - iterm2
   - jumpcut
   - keepassx
   - knox
   - lego-digital-designer
   - mactracker
-  - mp3gain
   - namebench
   - omnidisksweeper
   - pgadmin4
