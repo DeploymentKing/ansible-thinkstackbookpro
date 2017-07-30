@@ -1,2 +1,10 @@
 ---
-
+- name: Copy the .aws files
+  copy:
+    src: "{{ item }}"
+    dest: ~/.aws
+    owner: "{{ ansible_user_id }}"
+    group: admin
+    mode: 0644
+  with_fileglob:
+    - files/.aws/*
