@@ -9,7 +9,7 @@
       tags: ['osx_commands']
     - role: thinkstack.dock
       tags: ['dock']
-#    - role: thinkstack.dot_files
-#      tags: ['dot_files']
+    - role: thinkstack.dot_files
+      tags: ['dot_files']
     - role: thinkstack.app_store
       tags: ['app_store']

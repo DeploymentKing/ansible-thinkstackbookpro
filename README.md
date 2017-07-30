@@ -131,8 +131,6 @@ These are mostly direct download links current as of July 2017, some are more di
   - [Decipher TextMessage](https://deciphertools.com/decipher-textmessage.html)
   - [iShowU HD](http://www.shinywhitebox.com/downloads/iShowU_HD_2.3.20.dmg)
   - [IntelliJ](https://download.jetbrains.com/idea/ideaIU-2017.2.dmg)
-  - [MacMP3Gain](http://download.cnet.com/MacMP3Gain/3000-2170_4-34432.html)
-  - [MP4Joiner](http://www.mp4joiner.org/en/)
   - [RubyMine](https://download.jetbrains.com/ruby/RubyMine-2017.2.dmg)
   - [µTorrent](http://www.utorrent.com/downloads/mac)
 
@@ -144,12 +142,9 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
 
   1. Install [Sublime Package Manager](http://sublime.wbond.net/installation).
   2. Install all the apps that are not yet in this setup (see below).
-  3. Set keyboard repeat rate
-  4. Set trackpad tracking rate.
-  5. Set mouse tracking rate.
-  6. Configure extra Mail and/or Calendar accounts (e.g. Google, Exchange, etc.).
-  7. Google Chrome Profiles
-  8. Google Chrome Extensions
+  3. Configure extra Mail and/or Calendar accounts (e.g. Google, Exchange, etc.).
+  4. Google Chrome Profiles
+  5. Google Chrome Extensions
      - 1Password
      - Draw.io
      - Restlet Client
@@ -159,7 +154,6 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
   - .aws/*
   - .bash*
   - .git*
-  - .iterm*
   - .ssh/*
   
 My dotfiles contain much privates...hence the playbook includes vault encrypted vars. 
