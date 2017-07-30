@@ -12,6 +12,7 @@ homebrew_installed_packages:
   - chromedriver
   - curl
   - ddrescue
+  - dockutil
   - gdbm
   - gettext
   - git
