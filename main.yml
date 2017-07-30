@@ -2,7 +2,6 @@
 - name: Configure MacBook Pro
   hosts: all
   connection: local
-  become: true
   roles:
     - role: thinkstack.osx_commands
       tags: ['osx_commands']
