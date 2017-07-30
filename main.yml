@@ -1,0 +1,8 @@
+---
+- name: Configure MacBook Pro
+  hosts: all
+  connection: local
+  become: true
+  roles:
+    - role: thinkstack.homebrew
+      tags: ['homebrew']

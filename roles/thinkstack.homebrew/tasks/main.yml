@@ -1,0 +1,102 @@
+---
+- name: Ensure Homebrew parent directory has correct permissions.
+  file:
+    path: "{{ homebrew_prefix }}"
+    owner: root
+    group: admin
+    state: directory
+    mode: 0775
+  become: yes
+
+#- name: Ensure Homebrew directory exists.
+#  file:
+#    path: "{{ homebrew_install_path }}"
+#    owner: "{{ ansible_user_id }}"
+#    group: admin
+#    state: directory
+#    mode: 0775
+#  become: yes
+#
+#- name: Ensure Homebrew is installed.
+#  git:
+#    repo: https://github.com/Homebrew/brew
+#    version: master
+#    dest: "{{ homebrew_install_path }}"
+#    update: no
+#    accept_hostkey: yes
+#    depth: 1
+#
+#- name: Ensure proper permissions and ownership on homebrew_brew_bin_path dirs.
+#  file:
+#    path: "{{ homebrew_brew_bin_path }}"
+#    state: directory
+#    owner: "{{ ansible_user_id }}"
+#    group: admin
+#    mode: 0775
+#  become: yes
+#
+#- name: Ensure proper ownership on homebrew_install_path subdirs.
+#  file:
+#    path: "{{ homebrew_install_path }}"
+#    state: directory
+#    owner: "{{ ansible_user_id }}"
+#    group: admin
+#    recurse: true
+#  become: yes
+#
+#- name: Check if homebrew binary is already in place.
+#  stat:
+#    path: "{{ homebrew_brew_bin_path }}/brew"
+#  register: homebrew_binary
+#
+#- name: Symlink brew to homebrew_brew_bin_path.
+#  file:
+#    src: "{{ homebrew_install_path }}/bin/brew"
+#    dest: "{{ homebrew_brew_bin_path }}/brew"
+#    state: link
+#  when: homebrew_binary.stat.exists == false
+#  become: yes
+#
+#- name: Force update brew after installation.
+#  command: "{{ homebrew_brew_bin_path }}/brew update --force"
+#  when: homebrew_binary.stat.exists == false
+#
+#- name: Ensure configured taps are tapped.
+#  homebrew_tap:
+#    tap: "{{ item }}"
+#    state: present
+#  with_items: "{{ homebrew_taps }}"
+#
+#- name: Ensure configured homebrew packages are installed.
+#  homebrew:
+#    name: "{{ item.name | default(item) }}"
+#    install_options: "{{ item.install_options | default(omit) }}"
+#    state: present
+#  with_items: "{{ homebrew_installed_packages }}"
+#
+#- name: Ensure blacklisted homebrew packages are not installed.
+#  homebrew:
+#    name: "{{ item }}"
+#    state: absent
+#  with_items: "{{ homebrew_uninstalled_packages }}"
+#
+#- name: Upgrade all homebrew packages (if configured).
+#  homebrew:
+#    update_homebrew: yes
+#    upgrade_all: yes
+#  when: homebrew_upgrade_all_packages
+#
+#- name: Install configured cask applications.
+#  homebrew_cask:
+#    name: "{{ item }}"
+#    state: present
+#    install_options: "appdir={{ homebrew_cask_appdir }}"
+#  with_items: "{{ homebrew_cask_apps }}"
+#
+#- name: Copy the bash script full-brew-upgrade
+#  copy:
+#    src: /files/usr.local.bin.full-brew-upgrade.sh
+#    dest: "{{ homebrew_brew_bin_path }}/full-brew-upgrade.sh"
+#    owner: root
+#    group: admin
+#    mode: 0755

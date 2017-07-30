@@ -59,6 +59,7 @@ sudo pip install ansible
   - python
   - readline
   - selenium-server-standalone
+  - ssh-copy-id
   - sqlite
   - thefuck
   - tree

@@ -1,0 +1,110 @@
+---
+homebrew_prefix: /usr/local
+homebrew_install_path: "{{ homebrew_prefix }}/Homebrew"
+homebrew_brew_bin_path: /usr/local/bin
+
+homebrew_installed_packages:
+  - ansible-lint
+  - awscli
+  - bash
+  - bash-completion
+  - boost
+  - chromedriver
+  - curl
+  - ddrescue
+  - gdbm
+  - gettext
+  - git
+  - git-secrets
+  - go
+  - htop-osx
+  - icu4c
+  - jq
+  - libffi
+  - libyaml
+  - mas
+  - maven
+  - mplayer
+  - mysql
+  - nmap
+  - node@6
+  - nvm
+  - oniguruma
+  - openssh
+  - openssl
+  - openssl@1.1
+  - putty
+  - python
+  - readline
+  - selenium-server-standalone
+  - ssh-copy-id
+  - sqlite
+  - thefuck
+  - tree
+  - watch
+  - wget
+  - xz
+  - youtube-dl
+
+homebrew_uninstalled_packages: []
+
+homebrew_upgrade_all_packages: no
+
+homebrew_taps:
+  - homebrew/core
+  - caskroom/cask
+
+homebrew_cask_apps:
+  - 1password
+  - adobe-air
+  - beyond-compare
+  - calibre
+  - chefdk
+  - cleanmymac
+  - cyberduck
+  - docker
+  - docker-toolbox
+  - dropbox
+  - duet
+  - ejector
+  - etcher
+  - evernote
+  - gitkraken
+  - google-chrome
+  - gpgtools
+  - gradle
+  - groovy
+  - iterm2
+  - jumpcut
+  - keepassx
+  - knox
+  - lego-digital-designer
+  - mactracker
+  - mp3gain
+  - namebench
+  - omnidisksweeper
+  - pgadmin4
+  - razorsql
+  - sizeup
+  - skype
+  - slack
+  - stay
+  - subler
+  - sublime-text
+  - tunnelblick
+  - unetbootin
+  - vagrant
+  - vagrant-manager
+  - virtualbox
+  - virtualbox-extension-pack
+  - vlc
+  - vnc-viewer
+  - whatsapp
+  - wireshark
+  - xquartz
+  - xtrafinder
+
+homebrew_cask_appdir: /Applications
+
+homebrew_use_brewfile: true
+homebrew_brewfile_dir: '~'
