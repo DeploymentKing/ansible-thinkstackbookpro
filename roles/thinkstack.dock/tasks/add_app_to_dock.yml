@@ -2,7 +2,7 @@
 - name: "{{ item.key }} : Check if the app is in the dock."
   shell: "dockutil --find '{{ item.value.app }}'"
   register: add_command_output
-  failed_when: remove_command_output.stderr != ""
+  failed_when: add_command_output.stderr != ""
 
 - name: "{{ item.key }} : Add the app to the dock if not found."
   shell: "dockutil --add '/Applications/{{ item.value.app }}.app' {{ item.value.position }}"
