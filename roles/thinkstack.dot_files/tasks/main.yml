@@ -9,7 +9,7 @@
   with_fileglob:
     - files/.aws/*
 
-- name: Copy the .ssh private key files
+- name: Copy the private .ssh key files
   copy:
     src: "{{ item }}"
     dest: ~/.ssh/
@@ -19,7 +19,7 @@
   with_fileglob:
     - files/.ssh/*_rsa
 
-- name: Copy the .ssh public key files
+- name: Copy files with mode 0644
   copy:
     src: "{{ item }}"
     dest: ~/.ssh/
@@ -30,3 +30,5 @@
     - files/.ssh/*_rsa.pub
     - files/.ssh/config
     - files/.ssh/known_hosts
+    - files/.git*
+    - files/.bash*
