@@ -140,7 +140,7 @@ These are mostly direct download links current as of July 2017, some are more di
 ## Post-installation Tasks
 It's my hope that I can get the rest of these things wrapped up into Ansible playbooks soon, but for now, these steps need to be completed manually (assuming you already have Xcode and Ansible installed, and have run this playbook).
 
-  1. Install[Sublime Package Manager](http://sublime.wbond.net/installation).
+  1. Install [Sublime Package Manager](http://sublime.wbond.net/installation).
   2. Install all the apps that are not yet in this setup (see below).
   3. Set keyboard repeat rate
   4. Set trackpad tracking rate.
@@ -160,7 +160,8 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
   - .iterm*
   - .ssh/*
   
-My[dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
+My dotfiles contain much privates...hence the playbook includes vault encrypted vars. 
+You will need to replace these if for some weird reason you use this playbook and not Jeff's
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
