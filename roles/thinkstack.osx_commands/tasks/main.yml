@@ -1,0 +1,4 @@
+---
+- name: Set the hostname of the MacBook Pro.
+  command: "sudo scutil --set HostName {{ macbook_hostname }}"
+  become: yes
