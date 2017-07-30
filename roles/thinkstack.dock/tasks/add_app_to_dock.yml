@@ -5,5 +5,5 @@
   failed_when: add_command_output.stderr != ""
 
 - name: "{{ item.key }} : Add the app to the dock if not found."
-  shell: "dockutil --add '/Applications/{{ item.value.app }}.app' '{{ item.value.position }}'"
+  shell: "dockutil --add '/Applications/{{ item.value.app }}.app' {{ item.value.position }}"
   when: add_command_output.stdout | search('was not found')
