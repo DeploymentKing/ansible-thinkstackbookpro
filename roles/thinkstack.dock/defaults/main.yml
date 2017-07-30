@@ -1,5 +1,5 @@
 ---
-dockutil_items:
+dockutil_items_to_add:
   google_chrome:
     app: 'Google Chrome'
     position: '--after Safari'
@@ -9,3 +9,11 @@ dockutil_items:
   skype:
     app: 'Skype'
     position: '--after Slack'
+
+dockutil_items_to_remove:
+  - Contacts
+  - Notes
+  - Reminders
+  - Pages
+  - Numbers
+  - Keynote

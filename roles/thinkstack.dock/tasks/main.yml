@@ -1,4 +1,8 @@
 ---
 - name: Add applications to the Dock using dockutil (installed via brew).
   include: add_app_to_dock.yml
-  with_dict: "{{ dockutil_items }}"
+  with_dict: "{{ dockutil_items_to_add }}"
+
+- name: Remove applications from the Dock using dockutil (installed via brew).
+  include: remove_app_from_dock.yml
+  with_items: "{{ dockutil_items_to_remove }}"

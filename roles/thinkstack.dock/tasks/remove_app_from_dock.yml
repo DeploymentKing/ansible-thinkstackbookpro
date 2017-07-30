@@ -1,0 +1,8 @@
+---
+- name: "{{ item }} : Check if the app is in the dock."
+  command: "dockutil --find '{{ item }}'"
+  register: command_output
+
+- name: "{{ item }} : Add the app to the dock if not found."
+  command: "dockutil --remove '{{ item }}'"
+  when: command_output.stdout | search('was found')
