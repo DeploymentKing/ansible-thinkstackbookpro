@@ -1,2 +1,7 @@
 ---
 macbook_hostname: thinkstackbookpro
+
+dockutil_items:
+  google_chrome:
+    app: 'Google Chrome'
+    position: '--after Safari'

@@ -2,3 +2,19 @@
 - name: Set the hostname of the MacBook Pro.
   command: "scutil --set HostName {{ macbook_hostname }}"
   become: yes
+
+- name: Copy the osx script to my home.
+  copy:
+    src: files/.osx
+    dest: ~/.osx
+    owner: "{{ ansible_user_id }}"
+    group: admin
+    mode: 0755
+
+- name: Run .osx dotfile.
+  shell: '~/.osx --no-restart'
+  changed_when: false
+
+- name: Setup the dock items using dockutil (installed via brew install dockutil)
+  command: "dockutil --add /Applications/{{ item.value.app }}.app {{ item.value.position }}"
+  with_dict: "{{ dockutil_items }}"
