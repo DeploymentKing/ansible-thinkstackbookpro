@@ -7,10 +7,12 @@
 - name: Debug stdout
   debug:
     msg: "{{ command_output.stdout }}"
+    verbosity: 4
 
 - name: Debug stderr
   debug:
     msg: "{{ command_output.stderr }}"
+    verbosity: 4
 
 - name: "{{ item }} : Add the app to the dock if not found."
   shell: "dockutil --remove '{{ item }}'"
