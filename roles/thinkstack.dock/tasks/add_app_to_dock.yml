@@ -1,6 +1,6 @@
 ---
 - name: "{{ item.key }} : Check if the app is in the dock."
-  command: "dockutil --find {{ item.value.app }}"
+  command: "dockutil --find '{{ item.value.app }}'"
   register: command_output
 
 - name: "{{ item.key }} : Add the app to the dock if not found."
