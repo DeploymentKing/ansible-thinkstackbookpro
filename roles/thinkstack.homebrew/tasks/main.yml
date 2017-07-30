@@ -8,33 +8,33 @@
     mode: 0775
   become: yes
 
-#- name: Ensure Homebrew directory exists.
-#  file:
-#    path: "{{ homebrew_install_path }}"
-#    owner: "{{ ansible_user_id }}"
-#    group: admin
-#    state: directory
-#    mode: 0775
-#  become: yes
-#
-#- name: Ensure Homebrew is installed.
-#  git:
-#    repo: https://github.com/Homebrew/brew
-#    version: master
-#    dest: "{{ homebrew_install_path }}"
-#    update: no
-#    accept_hostkey: yes
-#    depth: 1
-#
-#- name: Ensure proper permissions and ownership on homebrew_brew_bin_path dirs.
-#  file:
-#    path: "{{ homebrew_brew_bin_path }}"
-#    state: directory
-#    owner: "{{ ansible_user_id }}"
-#    group: admin
-#    mode: 0775
-#  become: yes
-#
+- name: Ensure Homebrew directory exists.
+  file:
+    path: "{{ homebrew_install_path }}"
+    owner: "{{ ansible_user_id }}"
+    group: admin
+    state: directory
+    mode: 0775
+  become: yes
+
+- name: Ensure Homebrew is installed.
+  git:
+    repo: https://github.com/Homebrew/brew
+    version: master
+    dest: "{{ homebrew_install_path }}"
+    update: no
+    accept_hostkey: yes
+    depth: 1
+
+- name: Ensure proper permissions and ownership on homebrew_brew_bin_path dirs.
+  file:
+    path: "{{ homebrew_brew_bin_path }}"
+    state: directory
+    owner: "{{ ansible_user_id }}"
+    group: admin
+    mode: 0775
+  become: yes
+
 #- name: Ensure proper ownership on homebrew_install_path subdirs.
 #  file:
 #    path: "{{ homebrew_install_path }}"
