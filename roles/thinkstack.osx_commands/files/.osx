@@ -135,11 +135,8 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 chflags nohidden ~/Library
 
 ###############################################################################
-# Dock, Dashboard, and hot corners                                            #
+# Hot corners                                                                 #
 ###############################################################################
-
-# Set the icon size of Dock items
-defaults write com.apple.dock tilesize -int 60
 
 # Hot corners
 # Possible values:

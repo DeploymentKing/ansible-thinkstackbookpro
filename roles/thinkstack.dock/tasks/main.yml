@@ -6,3 +6,11 @@
 - name: Remove applications from the Dock using dockutil (installed via brew).
   include: remove_app_from_dock.yml
   with_items: "{{ dockutil_items_to_remove }}"
+
+- name: Set the dock icon size
+  osx_defaults:
+    domain: com.apple.dock
+    key: tilesize
+    type: int
+    value: 30
+    state: present
