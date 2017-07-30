@@ -7,7 +7,7 @@
       tags: ['homebrew']
     - role: thinkstack.osx_commands
       tags: ['osx_commands']
-    - role: thinkstack.dot_files
-      tags: ['dot_files']
+#    - role: thinkstack.dot_files
+#      tags: ['dot_files']
     - role: thinkstack.app_store
       tags: ['app_store']
