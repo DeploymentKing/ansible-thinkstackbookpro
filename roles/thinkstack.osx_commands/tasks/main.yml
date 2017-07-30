@@ -16,5 +16,5 @@
   changed_when: false
 
 - name: Setup the dock items using dockutil (installed via brew install dockutil)
-  command: "dockutil --add /Applications/{{ item.value.app }}.app {{ item.value.position }}"
+  command: "dockutil --add '/Applications/{{ item.value.app }}.app' {{ item.value.position }}"
   with_dict: "{{ dockutil_items }}"
