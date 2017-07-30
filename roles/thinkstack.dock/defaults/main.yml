@@ -1,4 +1,6 @@
 ---
+dockutil_icon_size: 60
+
 dockutil_items_to_add:
   google_chrome:
     app: 'Google Chrome'

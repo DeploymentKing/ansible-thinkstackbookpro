@@ -12,5 +12,8 @@
     domain: com.apple.dock
     key: tilesize
     type: int
-    value: 30
+    value: "{{ dockutil_icon_size }}"
     state: present
+
+- name: "Restart Dock."
+  shell: killall Dock
