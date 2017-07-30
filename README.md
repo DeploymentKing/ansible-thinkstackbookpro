@@ -1,5 +1,5 @@
 # Ansible Playbook for Mac Setup
-Ansible Playbook for that I created (read: shamelessly ripped off and modified to my own liking) from
+Ansible Playbook that I created (read: shamelessly ripped off and modified to my own liking) from
 [Jeff Geerling](https://github.com/geerlingguy)'s similar playbook that is linked below
 
 This is a one stop shop for setting up my Brew, Brew Cask, ChefDk, App Store and other development tools as I see fit
@@ -15,6 +15,11 @@ This is a one stop shop for setting up my Brew, Brew Cask, ChefDk, App Store and
   3. Clone this repository to your local drive.
   5. Run `ansible-playbook site.yml -K` inside this directory. Enter your account password when prompted.
 
+### Ansible Installation
+```bash
+sudo easy_install pip
+sudo pip install ansible
+```
 > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 
 ### Homebrew Application Installation
