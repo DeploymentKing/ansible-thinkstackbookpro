@@ -1,0 +1,4 @@
+---
+- name: Add applications to the Dock using dockutil (installed via brew).
+  include: add_app_to_dock.yml
+  with_dict: "{{ dockutil_items }}"

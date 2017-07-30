@@ -1,0 +1,11 @@
+---
+dockutil_items:
+  google_chrome:
+    app: 'Google Chrome'
+    position: '--after Safari'
+  slack:
+    app: 'Slack'
+    position: '--after Mail'
+  skype:
+    app: 'Skype'
+    position: '--after Slack'
