@@ -95,7 +95,7 @@
 
 - name: Copy the bash script full-brew-upgrade
   copy:
-    src: /files/usr.local.bin.full-brew-upgrade.sh
+    src: files/usr.local.bin.full-brew-upgrade.sh
     dest: "{{ homebrew_brew_bin_path }}/full-brew-upgrade.sh"
     owner: root
     group: admin
