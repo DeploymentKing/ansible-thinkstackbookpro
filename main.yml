@@ -4,5 +4,7 @@
   connection: local
   become: true
   roles:
+    - role: thinkstack.osx_commands
+      tags: ['osx_commands']
     - role: thinkstack.homebrew
       tags: ['homebrew']
