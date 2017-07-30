@@ -13,7 +13,7 @@ This is a one stop shop for setting up my Brew, Brew Cask, ChefDk, App Store and
   1. Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).
   2. [Install Ansible](http://docs.ansible.com/intro_installation.html).
   3. Clone this repository to your local drive.
-  5. Run `ansible-playbook site.yml -K` inside this directory. Enter your account password when prompted.
+  5. Run `ansible-playbook main.yml -K` inside this directory. Enter your account password when prompted.
 
 ### Ansible Installation
 ```bash
