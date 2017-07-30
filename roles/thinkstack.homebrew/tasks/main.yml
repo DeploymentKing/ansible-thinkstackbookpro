@@ -61,11 +61,11 @@
   command: "{{ homebrew_brew_bin_path }}/brew update --force"
   when: homebrew_binary.stat.exists == false
 
-- name: "Ensure configured taps are tapped."
-  command: "brew tap {{ item.value.tap }}"
-  args:
-    creates: "{{ homebrew_prefix }}/Homebrew/Library/Taps/{{ item.value.path }}"
-  with_dict: "{{ homebrew_taps }}"
+- name: Ensure configured taps are tapped.
+  homebrew_tap:
+    tap: "{{ item }}"
+    state: present
+  with_items: "{{ homebrew_taps }}"
 
 #- name: Ensure configured homebrew packages are installed.
 #  homebrew:
