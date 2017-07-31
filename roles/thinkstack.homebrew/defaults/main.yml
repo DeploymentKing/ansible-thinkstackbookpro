@@ -103,7 +103,6 @@ homebrew_cask_apps:
   - whatsapp
   - wireshark
   - xquartz
-  - xtrafinder
 
 homebrew_cask_appdir: /Applications
 
