@@ -22,3 +22,11 @@
 - name: Run .osx dotfile.
   shell: '~/.osx --no-restart'
   changed_when: false
+
+- name: Set the mouse speed
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.mouse.scaling
+    type: float
+    value: 2.5
+    state: present

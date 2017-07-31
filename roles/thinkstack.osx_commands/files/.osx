@@ -73,7 +73,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 defaults write NSGlobalDomain KeyRepeat -int 2
 
 # Set a blazingly fast mouse speed
-defaults write NSGlobalDomain com.apple.mouse.scaling -float 2
+# defaults write NSGlobalDomain com.apple.mouse.scaling -float 2.5
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
