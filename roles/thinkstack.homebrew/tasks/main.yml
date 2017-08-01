@@ -93,6 +93,12 @@
     install_options: "appdir={{ homebrew_cask_appdir }}"
   with_items: "{{ homebrew_cask_apps }}"
 
+- name: Install fixed versions of brew cask packages
+  command: "brew cask install {{ item.value.raw_url }}"
+  args:
+    creates: "{{ item.value.creates }}"
+  with_dict: "{{ homebrew_cask_apps_fixed_versions }}"
+
 - name: Copy the bash script full-brew-upgrade
   copy:
     src: files/usr.local.bin.full-brew-upgrade.sh

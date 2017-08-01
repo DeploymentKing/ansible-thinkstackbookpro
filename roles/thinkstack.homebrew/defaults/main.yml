@@ -62,8 +62,6 @@ homebrew_cask_apps:
   - adobe-air
   - beyond-compare
   - calibre
-  # This version of chefdk (1.5.0) has 2.3 version of Ruby which is needed for keepass-static gem to work
-  - https://raw.githubusercontent.com/caskroom/homebrew-cask/241ca06c0debf23880283430a1a7474b5e4f26ee/Casks/chefdk.rb
   - cleanmymac
   - cyberduck
   - docker
@@ -104,6 +102,14 @@ homebrew_cask_apps:
   - whatsapp
   - wireshark
   - xquartz
+
+# https://www.jverdeyen.be/mac/downgrade-brew-cask-application/
+# https://github.com/caskroom/homebrew-cask
+homebrew_cask_apps_fixed_versions:
+  # This version of chefdk (1.5.0) has 2.3 version of Ruby which is needed for keepass-static gem to work
+  chefdk:
+    raw_url: https://raw.githubusercontent.com/caskroom/homebrew-cask/241ca06c0debf23880283430a1a7474b5e4f26ee/Casks/chefdk.rb
+    creates: /opt/chefdk/embedded/bin/chef
 
 homebrew_cask_appdir: /Applications
 
