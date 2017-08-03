@@ -23,8 +23,13 @@ dockutil_items_to_add:
 
 dockutil_items_to_remove:
   - Contacts
-  - Notes
-  - Reminders
-  - Pages
-  - Numbers
+  - FaceTime
+  - iBooks
+  - iTunes
   - Keynote
+  - Messages
+  - Numbers
+  - Notes
+  - Pages
+  - Photos
+  - Reminders
