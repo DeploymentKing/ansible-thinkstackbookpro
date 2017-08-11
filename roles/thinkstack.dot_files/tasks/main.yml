@@ -40,4 +40,3 @@
   with_fileglob:
     - files/.ssh/*_rsa.pub
     - files/.ssh/config
-    - files/.ssh/known_hosts
