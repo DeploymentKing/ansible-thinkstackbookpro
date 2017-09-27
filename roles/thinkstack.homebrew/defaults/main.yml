@@ -60,21 +60,24 @@ homebrew_taps:
 homebrew_cask_apps:
   - 1password
   - adobe-air
+  - alfred
   - appcleaner
+  - authy-desktop
   - beyond-compare
   - calibre
+  - chefdk
   - cleanmymac
   - cyberduck
   - docker
   - docker-toolbox
   - dropbox
   - duet
-  - ejector
   - etcher
   - evernote
   - gitkraken
   - google-chrome
   - gpgtools
+  - inkscape
   - iterm2
   - jumpcut
   - keepassx
