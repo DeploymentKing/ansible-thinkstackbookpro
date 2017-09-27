@@ -21,6 +21,7 @@ homebrew_installed_packages:
   - gradle
   - groovy
   - htop-osx
+  - hub
   - icu4c
   - jq
   - libffi
@@ -38,6 +39,7 @@ homebrew_installed_packages:
   - openssl@1.1
   - putty
   - python
+  - python3
   - readline
   - selenium-server-standalone
   - ssh-copy-id
