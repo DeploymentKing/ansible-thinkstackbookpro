@@ -161,6 +161,18 @@ You will need to replace these if for some weird reason you use this playbook an
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
+### Useful commands
+```bash
+ansible-vault decrypt ~/source/DeploymentKing/ansible-thinkstackbookpro/roles/thinkstack.dot_files/files/.ssh/*
+ansible-vault decrypt ~/source/DeploymentKing/ansible-thinkstackbookpro/roles/thinkstack.dot_files/files/.aws/*
+ansible-vault decrypt ~/source/DeploymentKing/ansible-thinkstackbookpro/roles/thinkstack.dot_files/files/.bash*
+```
+```bash
+ansible-vault encrypt ~/source/DeploymentKing/ansible-thinkstackbookpro/roles/thinkstack.dot_files/files/.ssh/* --ask-vault-pass
+ansible-vault encrypt ~/source/DeploymentKing/ansible-thinkstackbookpro/roles/thinkstack.dot_files/files/.aws/* --ask-vault-pass
+ansible-vault encrypt ~/source/DeploymentKing/ansible-thinkstackbookpro/roles/thinkstack.dot_files/files/.bash* --ask-vault-pass
+```
+
 ### Configurations to be added:
 
 ## Testing the Playbook
