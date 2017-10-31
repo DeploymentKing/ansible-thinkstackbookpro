@@ -14,7 +14,7 @@ casks=( $(brew cask list) )
 
 # set up array of sensitive apps that should not be updated automatically (requires Bash 4)
 declare -A exclusions
-for constant in chefdk vagrant docker-toolbox
+for constant in chefdk
 do
     exclusions[$constant]=1
 done

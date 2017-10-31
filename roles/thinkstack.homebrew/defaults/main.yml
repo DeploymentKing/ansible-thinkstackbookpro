@@ -5,6 +5,7 @@ homebrew_brew_bin_path: /usr/local/bin
 
 homebrew_installed_packages:
   - ansible-lint
+  - aws-elasticbeanstalk
   - awscli
   - bash
   - bash-completion
@@ -20,6 +21,7 @@ homebrew_installed_packages:
   - go
   - gradle
   - groovy
+  - htop
   - htop-osx
   - hub
   - icu4c
@@ -42,8 +44,8 @@ homebrew_installed_packages:
   - python3
   - readline
   - selenium-server-standalone
-  - ssh-copy-id
   - sqlite
+  - ssh-copy-id
   - thefuck
   - tree
   - watch
@@ -71,18 +73,18 @@ homebrew_cask_apps:
   - cleanmymac
   - cyberduck
   - docker
-  - docker-toolbox
   - dropbox
   - duet
   - etcher
   - evernote
+  - fliqlo
   - gitkraken
   - google-chrome
   - gpgtools
   - inkscape
   - iterm2
-  - jumpcut
   - keepassx
+  - kitematic
   - knox
   - lego-digital-designer
   - mactracker
@@ -95,10 +97,8 @@ homebrew_cask_apps:
   - slack
   - spotify
   - stay
-  - subler
   - sublime-text
   - tunnelblick
-  - unetbootin
   - vagrant
   - vagrant-manager
   - virtualbox
