@@ -4,7 +4,9 @@ homebrew_install_path: "{{ homebrew_prefix }}/Homebrew"
 homebrew_brew_bin_path: /usr/local/bin
 
 homebrew_installed_packages:
+  - adns
   - ansible-lint
+  - autoconf
   - aws-elasticbeanstalk
   - awscli
   - bash
@@ -13,11 +15,15 @@ homebrew_installed_packages:
   - chromedriver
   - curl
   - ddrescue
+  - docker-machine
   - dockutil
   - gdbm
   - gettext
   - git
   - git-secrets
+  - gmp
+  - gnupg
+  - gnutls
   - go
   - gradle
   - groovy
@@ -25,24 +31,48 @@ homebrew_installed_packages:
   - htop-osx
   - hub
   - icu4c
+  - jasper
+  - jpeg
   - jq
+  - kubernetes-cli
+  - libassuan
+  - libev
   - libffi
+  - libgcrypt
+  - libgpg-error
+  - libidn2
+  - libksba
+  - libpng
+  - libtasn1
+  - libtiff
+  - libunistring
+  - libusb
   - libyaml
   - mas
   - maven
   - mplayer
   - mysql
+  - netpbm
+  - nettle
   - nmap
+  - node
   - node@6
+  - npth
   - nvm
   - oniguruma
   - openssh
   - openssl
   - openssl@1.1
+  - p11-kit
+  - pinentry
+  - pkg-config
   - putty
   - python
   - python3
+  - rbenv
+  - rbenv-chefdk
   - readline
+  - ruby-build
   - selenium-server-standalone
   - sqlite
   - ssh-copy-id
@@ -51,6 +81,7 @@ homebrew_installed_packages:
   - watch
   - wget
   - xz
+  - yarn
   - youtube-dl
 
 homebrew_uninstalled_packages: []
@@ -78,6 +109,7 @@ homebrew_cask_apps:
   - etcher
   - evernote
   - fliqlo
+  - franz
   - gitkraken
   - google-chrome
   - gpgtools
@@ -86,11 +118,13 @@ homebrew_cask_apps:
   - keepassx
   - kitematic
   - knox
-  - lego-digital-designer
   - mactracker
+  - minikube
   - namebench
+  - ngrok
   - omnidisksweeper
   - pgadmin4
+  - quickbooks-online
   - razorsql
   - sizeup
   - skype
