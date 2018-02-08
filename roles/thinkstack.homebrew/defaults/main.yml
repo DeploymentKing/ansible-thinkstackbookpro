@@ -103,6 +103,7 @@ homebrew_cask_apps:
   - chefdk
   - cleanmymac
   - cyberduck
+  - daisydisk
   - docker
   - dropbox
   - duet
@@ -117,7 +118,6 @@ homebrew_cask_apps:
   - iterm2
   - keepassx
   - kitematic
-  - knox
   - mactracker
   - minikube
   - namebench
