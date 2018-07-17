@@ -23,6 +23,7 @@ homebrew_installed_packages:
   - git
   - git-secrets
   - gmp
+  - gnupg
   - gnutls
   - go
   - gradle
@@ -121,6 +122,7 @@ homebrew_cask_apps:
   - fliqlo
   - gitkraken
   - google-chrome
+  - gpg-suite
   - iterm2
   - keepassx
   - mactracker
