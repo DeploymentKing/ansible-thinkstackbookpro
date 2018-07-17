@@ -13,16 +13,16 @@ homebrew_installed_packages:
   - bash-completion
   - boost
   - chromedriver
+  - csvprintf
   - curl
   - ddrescue
-  - docker-machine
   - dockutil
+  - ffmpeg
   - gdbm
   - gettext
   - git
   - git-secrets
   - gmp
-  - gnupg
   - gnutls
   - go
   - gradle
@@ -30,11 +30,17 @@ homebrew_installed_packages:
   - htop
   - htop-osx
   - hub
+  - hugo
   - icu4c
   - jasper
+  - jmeter
   - jpeg
   - jq
+  - jx
+  - kpcli
   - kubernetes-cli
+  - kubernetes-helm
+  - lame
   - libassuan
   - libev
   - libffi
@@ -52,11 +58,10 @@ homebrew_installed_packages:
   - maven
   - mplayer
   - mysql
+  - netcat
   - netpbm
   - nettle
   - nmap
-  - node
-  - node@6
   - npth
   - nvm
   - oniguruma
@@ -68,21 +73,24 @@ homebrew_installed_packages:
   - pkg-config
   - putty
   - python
-  - python3
+  - python@2
   - rbenv
-  - rbenv-chefdk
   - readline
   - ruby-build
   - selenium-server-standalone
+  - shellcheck
   - sqlite
   - ssh-copy-id
-  - thefuck
+  - telnet
   - tree
   - watch
   - wget
+  - x264
+  - xvid
   - xz
-  - yarn
   - youtube-dl
+  - zsh
+  - zsh-completions
 
 homebrew_uninstalled_packages: []
 
@@ -97,31 +105,24 @@ homebrew_cask_apps:
   - adobe-air
   - alfred
   - appcleaner
-  - authy-desktop
+  - authy
   - beyond-compare
-  - bisq
-  - bonjour-browser
-  - caffeine
   - calibre
-  - chefdk
+  - charlessoft-timetracker
   - cleanmymac
   - cyberduck
   - daisydisk
-  - diskmaker-x
+  - deckset
   - docker
   - dropbox
   - duet
   - etcher
   - evernote
   - fliqlo
-  - franz
   - gitkraken
   - google-chrome
-  - gpgtools
-  - inkscape
   - iterm2
   - keepassx
-  - kitematic
   - mactracker
   - minikube
   - namebench
@@ -135,18 +136,17 @@ homebrew_cask_apps:
   - slack
   - spotify
   - stay
+  - steam
   - sublime-text
   - synergy
   - tunnelblick
   - vagrant
-  - vagrant-manager
   - virtualbox
   - virtualbox-extension-pack
   - vlc
   - vnc-viewer
   - whatsapp
   - wireshark
-  - xquartz
 
 # https://www.jverdeyen.be/mac/downgrade-brew-cask-application/
 # https://github.com/caskroom/homebrew-cask
